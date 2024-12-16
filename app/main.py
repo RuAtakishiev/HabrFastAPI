@@ -19,7 +19,18 @@ def get_path_to_json(file_name: str) -> str:
     return path_to_json
 
 
-def get_users_from_role(searching_data: list, value: Optional[str] = None):
+def get_user_from_id(searching_data: list, value: Optional[str] = None) -> list:
+    result = list()
+
+    for user in searching_data:
+        if user['id'] == value:
+            result.append(user)
+            break
+    
+    return result
+
+
+def get_users_from_role(searching_data: list, value: Optional[str] = None) -> list:
     result_list = searching_data
 
     path_to_json_user_types = get_path_to_json("./json/user_type.json")
@@ -36,14 +47,17 @@ def get_users_from_role(searching_data: list, value: Optional[str] = None):
     return result_list
 
 
-def get_users_status(searching_data: list, value: Optional[bool] = None):    
+def get_users_status(searching_data: list, value: Optional[bool] = None) -> list:    
     return [user for user in searching_data if value == user["not_banned"]]
     
 
-def get_users_by_parameters(searching_data: list, **kwargs) -> list:    
+def get_users_by_parameters(searching_data: list, **kwargs) -> list:
     result_list = searching_data
 
     for key, value in kwargs.items():
+        if key == "user_id":
+            result_list = get_user_from_id(result_list, value)
+
         if key == "user_type":
             result_list = get_users_from_role(result_list, value)
         
@@ -62,11 +76,14 @@ def home_page():
 
 
 @app.get("/users")
-def get_users(user_type: Optional[str] = None, not_banned: Optional[bool] = None) -> list:
+def get_users(user_id: Optional[str] = None, user_type: Optional[str] = None, not_banned: Optional[bool] = None) -> list:
     path_to_json_users = get_path_to_json("./json/user.json")
     users = json_to_dict_list(path_to_json_users)
 
     result_list = users
+
+    if user_id is not None:
+        result_list = get_users_by_parameters(result_list, user_id=user_id)
 
     if user_type is not None:
         result_list = get_users_by_parameters(result_list, user_type=user_type)
@@ -78,7 +95,7 @@ def get_users(user_type: Optional[str] = None, not_banned: Optional[bool] = None
 
 
 @app.get("/users/{user_type}")
-def get_users_specified_type(user_type: str, not_banned: Optional[bool] = None) -> list:
+def get_users_specified_type(user_type: str) -> list:
     path_to_json_users = get_path_to_json("./json/user.json")
     users = json_to_dict_list(path_to_json_users)
 
@@ -86,6 +103,22 @@ def get_users_specified_type(user_type: str, not_banned: Optional[bool] = None) 
 
     if user_type is not None:
         result_list = get_users_by_parameters(result_list, user_type=user_type)
+    
+    return result_list
+
+
+@app.get("/users/{user_type}/q")
+def get_users_from_mixed_params(user_type: str, user_id: Optional[str] = None, not_banned: Optional[bool] = None) -> list:
+    path_to_json_users = get_path_to_json("./json/user.json")
+    users = json_to_dict_list(path_to_json_users)
+
+    result_list = users
+
+    if user_type is not None:
+        result_list = get_users_by_parameters(result_list, user_type=user_type)
+
+    if user_id is not None:
+        result_list = get_users_by_parameters(result_list, user_id=user_id)
 
     if not_banned is not None:
         result_list = get_users_by_parameters(result_list, not_banned=not_banned)
