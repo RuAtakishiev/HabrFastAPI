@@ -1,0 +1,72 @@
+[
+    {
+        "id": "17849c70-6ab8-431c-b642-76f1def4dfde",
+        "user_type": "2045b6e7-081b-40ef-87c7-43d9b08e554d",
+        "login": "admin",
+        "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+        "not_banned": true
+    },
+    {
+        "id": "0f43be26-91ce-4ecf-b850-37a593c83e3f",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "egoroff",
+        "password": "19e74e8b933fe1d9c279a4a5d57557aec4be31c4a3c9de4b605595da30358883",
+        "not_banned": false
+    },
+    {
+        "id": "ca13068b-8ba9-4966-9cda-8edf3bb85e1b",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "haudi",
+        "password": "5c7c60a6f9bb87d8e6699328659dd72a76d714f8e04ef1861839d5223c98178f",
+        "not_banned": false
+    },
+    {
+        "id": "9b002b8b-f411-456c-93f0-1cc2d197afe6",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "balakirev",
+        "password": "34f6901e8485cd19a7769dca2f690a6e1dda278c5eb1b7f646f81262c53fe9b5",
+        "not_banned": true
+    },
+    {
+        "id": "4922ecb5-d927-40e1-a8e6-54cb4dd81965",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "dudar",
+        "password": "71ceb1f6b8907b975ebf805e14d455b060c3197c962dd750928b3f4ef4fda276",
+        "not_banned": true
+    },
+    {
+        "id": "db470901-4c93-45a0-bbde-e8bd21087c97",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "wiseplat",
+        "password": "e4c4c4456f8e0fde2c08dd90d3959492d7d59b60c144a2ca18e64fecaf92e5ec",
+        "not_banned": true
+    },
+    {
+        "id": "7cdc825f-6b9f-4b99-8f4d-76834d1c1e7a",
+        "user_type": "5a5258a9-b6c7-4ef5-8772-f4b0abd48487",
+        "login": "nemchinskiy",
+        "password": "0a3370e8e27c67ccd97892c5b19cc415998216b2d5e6bff8de1e673a3e928426",
+        "not_banned": false
+    },
+    {
+        "id": "0cb32240-7f7f-42db-b72a-b2c0ac3b71f0",
+        "user_type": "34503309-b015-4504-ab8d-6b9b03333d37",
+        "login": "yandex",
+        "password": "5ec9c2c2913538bbedadd97c25943dc5fedf8617e6bed980714f5e9a9b2e24e6",
+        "not_banned": true
+    },
+    {
+        "id": "f7cf7cd2-e435-44f3-8d97-f8047147d7e1",
+        "user_type": "34503309-b015-4504-ab8d-6b9b03333d37",
+        "login": "vitacore",
+        "password": "1dacb9cce82a82bcdec69733bfffe63af9b3dc664a1e80267f76ffeb72cc500b",
+        "not_banned": true
+    },
+    {
+        "id": "2b904692-52bb-453b-b5cd-2bc775f270ec",
+        "user_type": "34503309-b015-4504-ab8d-6b9b03333d37",
+        "login": "vk",
+        "password": "8630c6c9af0730c3e9635a44c97bfb4ac4ff57c449951a60848ac666f5f2de0c",
+        "not_banned": false
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "user_id": "0cb32240-7f7f-42db-b72a-b2c0ac3b71f0",
+        "name": "yandex",
+        "legal_data": {
+            "inn": 7736207543,
+            "kpp": 770401001
+        }
+    },
+    {
+        "user_id": "f7cf7cd2-e435-44f3-8d97-f8047147d7e1",
+        "name": "vitacore",
+        "legal_data": {
+            "inn": 1655178822,
+            "kpp": 165501001
+        }
+    },
+    {
+        "user_id": "2b904692-52bb-453b-b5cd-2bc775f270ec",
+        "name": "vk",
+        "legal_data": {
+            "inn": 7743001840,
+            "kpp": 771401001
+        }
+    }
+]

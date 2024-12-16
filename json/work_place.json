@@ -1,0 +1,26 @@
+[
+    {
+        "applicant_id": "0f43be26-91ce-4ecf-b850-37a593c83e3f",
+        "employer_id": "2b904692-52bb-453b-b5cd-2bc775f270ec"
+    },
+    {
+        "applicant_id": "ca13068b-8ba9-4966-9cda-8edf3bb85e1b",
+        "employer_id": "0cb32240-7f7f-42db-b72a-b2c0ac3b71f0"
+    },
+    {
+        "applicant_id": "9b002b8b-f411-456c-93f0-1cc2d197afe6",
+        "employer_id": "2b904692-52bb-453b-b5cd-2bc775f270ec"
+    },
+    {
+        "applicant_id": "4922ecb5-d927-40e1-a8e6-54cb4dd81965",
+        "employer_id": "0cb32240-7f7f-42db-b72a-b2c0ac3b71f0"
+    },
+    {
+        "applicant_id": "db470901-4c93-45a0-bbde-e8bd21087c97",
+        "employer_id": "f7cf7cd2-e435-44f3-8d97-f8047147d7e1"
+    },
+    {
+        "applicant_id": "7cdc825f-6b9f-4b99-8f4d-76834d1c1e7a",
+        "employer_id": "f7cf7cd2-e435-44f3-8d97-f8047147d7e1"
+    }
+]

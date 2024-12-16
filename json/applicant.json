@@ -1,0 +1,32 @@
+[
+    {
+        "user_id": "0f43be26-91ce-4ecf-b850-37a593c83e3f",
+        "fullname": "Егоров Никита Алексеевич",
+        "not_woman": true
+    },
+    {
+        "user_id": "ca13068b-8ba9-4966-9cda-8edf3bb85e1b",
+        "fullname": "Хауди Алан Низамович",
+        "not_woman": true
+    },
+    {
+        "user_id": "9b002b8b-f411-456c-93f0-1cc2d197afe6",
+        "fullname": "Балакирев Сергей Васильевич",
+        "not_woman": true
+    },
+    {
+        "user_id": "4922ecb5-d927-40e1-a8e6-54cb4dd81965",
+        "fullname": "Дударь Георгий Олегович",
+        "not_woman": true
+    },
+    {
+        "user_id": "db470901-4c93-45a0-bbde-e8bd21087c97",
+        "fullname": "Вайсплат Андрей Викторович",
+        "not_woman": true
+    },
+    {
+        "user_id": "7cdc825f-6b9f-4b99-8f4d-76834d1c1e7a",
+        "fullname": "Немчинский Сергей Владимирович",
+        "not_woman": false
+    }
+]
